@@ -1,0 +1,118 @@
+.svg {
+      margin-top: 100px;
+      margin-left: 300px;
+}
+input[type=radio]{
+       display: none;
+}
+label{
+        background-color: rgb(45, 238, 238);
+     padding: 12px;
+      border-radius: 5px;
+       font-size: larger;
+font-weight: lighter;
+   text-align: center;
+margin-top: 150px;
+margin-left: 50px;
+cursor: pointer;
+box-shadow: 5px 5px 15px rgb(43, 180, 235);
+display: flex;
+float: left;
+}
+label:hover{
+       box-shadow:inset 5px 5px 15px rgb(248, 177, 44);
+}
+
+.container {
+            text-align: center;
+          margin: 50px;
+}
+.wings {
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.stop:checked ~ .svg > .wings{
+       transform: rotate(0);
+}
+#low:checked ~ .svg > .wing {
+     animation-name: slow;
+      animation-duration: 1s;
+}
+@keyframes slow{
+   100%{
+       transform: rotate(360deg);
+   }
+}
+
+
+#normal:checked ~ .svg > .wing {
+     animation-name: mdm;
+      animation-duration: .5s;
+}
+@keyframes mdm{
+   100%{
+       transform: rotate(360deg);
+   }
+}
+
+#high:checked ~ .svg > .wing {
+     animation-name: fast;
+      animation-duration: 025s;
+}
+@keyframes fast{
+   100%{
+       transform: rotate(360deg);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
